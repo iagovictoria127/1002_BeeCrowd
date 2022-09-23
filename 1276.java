@@ -64,13 +64,13 @@ public class Main {
                         }
                         if(z-1 > y){
                             if(at == last || aux == last){
-                            System.out.print(at+":"+aux);
+                            System.out.println(at+":"+aux);
                             }else{
                                 System.out.print(at+":"+aux+", ");
                             }
                         }else{
                             if(at == last){
-                            System.out.print(at+":"+at);
+                            System.out.println(at+":"+at);
                             }else{
                                 System.out.print(at+":"+at+", ");
                             }
