@@ -32,14 +32,17 @@ public class Main {
             char list2[] = {' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '};
             char aux = ' ';
             input = sc.nextLine();
-            input = input.toLowerCase();
-            input = input.replaceAll("\\s+", " ");
+            //input = input.toLowerCase();
+            input = input.replaceAll("\\s+","");
             char arr[] = input.toCharArray();
             Arrays.sort(arr);
             char last = ' ';
-            if(arr.length > 0)
+            if(arr.length > 0){
             last = arr[arr.length-1];
-            
+            } else {
+                System.out.println("");
+            }
+
             while(arr.length > count){
                 for(int x = 0;x < list.length;x++){
                     if(arr[count] == list[x]){
