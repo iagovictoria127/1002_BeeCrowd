@@ -1,13 +1,10 @@
+package LetterRange;
+
 import java.io.IOException;
 import java.util.Scanner;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class BeeCrowd1276{
-
-
-
-}
 
 /**
  * IMPORTANT: 
@@ -18,7 +15,7 @@ public class BeeCrowd1276{
 public class Main {
  
     public static void main(String[] args) throws IOException {
- 
+        
         /**
          * Escreva a sua solução aqui
          * Code your solution here
