@@ -7,7 +7,7 @@
 Instrução de clone: git clone https://github.com/iagovictoria127/1276_BeeCrowd.git
 
 Instrução para execução: 
-# mvn compile
-# mvn package
-# java -jar /target
-# java -jar target\LetterRange-0.1.0.jar
+mvn compile
+mvn package
+java -jar /target
+java -jar target\LetterRange-0.1.0.jar
