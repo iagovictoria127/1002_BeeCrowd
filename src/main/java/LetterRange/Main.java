@@ -3,7 +3,6 @@ package LetterRange;
 import java.io.IOException;
 import java.util.Scanner;
 import java.util.Arrays;
-import java.util.ArrayList;
 
 
 /**
@@ -13,6 +12,14 @@ import java.util.ArrayList;
  *      El nombre de la clase debe ser "Main" para que su solución ejecutar
  */
 public class Main {
+    
+    
+    
+    public String configString(String str){ 
+        str = str.toLowerCase();
+        str = str.replaceAll("\\s+","");
+        return str;
+    }
  
     public static void main(String[] args) throws IOException {
         
@@ -21,19 +28,17 @@ public class Main {
          * Code your solution here
          * Escriba su solución aquí
          */
+         Main m = new Main();
          Scanner sc = new Scanner(System.in);
          char list[] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
          
          while (sc.hasNextLine()) {
-            ArrayList<String> disp = new ArrayList<String>();
             String input = "";
             int count = 0;
-            int count2 = 0;
             char list2[] = {' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '};
             char aux = ' ';
             input = sc.nextLine();
-            //input = input.toLowerCase();
-            input = input.replaceAll("\\s+","");
+            input = m.configString(input);
             char arr[] = input.toCharArray();
             Arrays.sort(arr);
             char last = ' ';
@@ -85,8 +90,10 @@ public class Main {
                 }
                 
             }
-            
 
     }
+    sc.close();
+
+    
 }
 }
